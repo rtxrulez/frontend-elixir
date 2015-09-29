@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp.spritesmith": "^4.1.0",
+    "laravel-elixir-imagemin": "^0.2.1"
+  },
+  "dependencies": {
+    "bower": "^1.5.2",
+    "browser-sync": "^2.9.3",
+    "laravel-elixir": "^3.0.0"
+  }
+}
