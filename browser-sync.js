@@ -8,13 +8,16 @@ require('./elixir-browser-sync'); // переменная с адресом ло
  */
 gulp.task("default", function() {
     browserSync.init({
-        proxy           : domainName,
+        // proxy           : domainName, 
         logPrefix       : "Laravel Eixir BrowserSync",
         logConnections  : false,
         reloadOnRestart : false,
         notify          : false,
         open            : false,
-        tunnel: true
+        tunnel: true,
+        server: {
+            baseDir: './public'
+        }
     });
     gulp.watch("public/css/*").on('change', browserSync.reload);
     //gulp.watch("resources/view/**/*").on('change', browserSync.reload);
